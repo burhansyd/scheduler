@@ -1,4 +1,5 @@
 import React from "react";
+import InterviewerList from "components/InterviewerList";
 import Button from "components/Button";
 
 export default function Form(props) {
@@ -16,7 +17,7 @@ export default function Form(props) {
           */
           />
         </form>
-        <InterviewerList interviewers={props.interviewers} interviewer={interviewer} setInterviewer={setInterviewer} />
+        <InterviewerList interviewers={props.interviewers} interviewer={props.interviewer} setInterviewer={props.setInterviewer} />
       </section>
       <section className="appointment__card-right">
         <section className="appointment__actions">
