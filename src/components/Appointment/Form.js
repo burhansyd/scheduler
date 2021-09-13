@@ -22,10 +22,12 @@ export default function Form(props) {
             id="inputField"
             className="appointment__create-input text--semi-bold"
             name={name}
+            value={name}
             type="text"
             placeholder="Enter Student Name"
             onChange={(e) => setName(e.target.value)}
             onSubmit={event => event.preventDefault()}
+            data-testid="student-name-input"
           /*
             This must be a controlled component
           */

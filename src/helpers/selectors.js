@@ -37,7 +37,7 @@ export function getInterviewersForDay(state, day) {
   if (dayObject.length === 0) {
     return [];
   }
-  let interviewers = dayObject[0].interviewers;
+  const interviewers = dayObject[0].interviewers;
   Object.keys(state.interviewers).forEach(id => {
     let numId = Number(id);
     if (interviewers.includes(numId)) {
